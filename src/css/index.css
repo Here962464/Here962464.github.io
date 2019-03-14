@@ -46,3 +46,9 @@ body{
         margin-top: 20%;
     }
 }
+@media screen and (max-height: 600px) {
+    .content{
+        margin-top: 10%;
+        padding-top:200px;
+    }
+}
