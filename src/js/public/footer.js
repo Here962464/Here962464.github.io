@@ -17,7 +17,7 @@ var footer = new Vue({
 		setInterval(function(){
 			color1 = Math.floor((Math.random()*255));
 			color2 = Math.floor((Math.random()*255));
-			color3 = Math.floor((Matrh.random()*255));
+			color3 = Math.floor((Math.random()*255));
 			self.heartColor = 'rgb('+color1+','+color2+','+color3+')';
 			self.heartColor2 = 'rgb('+color3+','+color1+','+color2+')';
 		},1000);

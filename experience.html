@@ -7,6 +7,7 @@
 	<meta name="keywords" content="个人网站">
 	<meta name="Author" content="麻邻">
 	<link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 	<!-- 这四个可以合并成为1个 -->
 	<link rel="stylesheet" type="text/css" href="src/css/public/reset.css">
 	<link rel="stylesheet" type="text/css" href="src/css/public/header.css">
@@ -18,13 +19,23 @@
 <body>
 	<div class="content_box">
 		<div class="mask"></div>
-		<ul class="header" id="header">
+		<ul class="header" :class="{header_active:scroll}" id="header">
 			<li v-for="(item, index) in menu" v-cloak>
 				<a href="javascript:void(0);" :class="{active:iscur==index}" @click="tabMenu(index)">{{item.title}}</a>
 			</li>
 		</ul>
 		<div class="content" id="content">
-			
+			<div class="nav">
+				<img :src="pic">
+			</div>
+			<div class="info">
+				<div class="avatar">
+					<img src="src/images/avatar.jpg">
+				</div>
+				<!-- <p>听说程序员很酷？</p> -->
+				<p>我是一名kuku的程序员</p>
+				<p>热爱代码，也痛恨代码。热爱生活，也痛恨生活。</p>
+			</div>
 		</div>
 		<div class="footer" id="footer">
 			<a href="https://blog.csdn.net/here962464" target="_blank"><i class="iconfont icon-csdn"></i></a>
