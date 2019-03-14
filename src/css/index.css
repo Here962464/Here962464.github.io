@@ -22,9 +22,6 @@ body{
     margin-left: 25%;
     margin-top: 3%;
     position: relative;
-    /* background: rgba(255,255,255,0.7); */
-    /* border-radius: 4px; */
-    /* box-shadow: 0 0 4px 0px rgba(255,255,255,0.6); */
     text-align: center;
     background: url(../images/float_icon.png) no-repeat;
     background-position: 52% 0;
@@ -37,4 +34,15 @@ body{
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+
+/*媒体查询兼容手机端*/
+@media screen and (max-width: 480px) {
+    .content{
+        width: 92%;
+    	background-size: contain;
+        margin-left: 4%;
+        margin-top: 20%;
+    }
 }

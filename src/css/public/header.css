@@ -26,3 +26,14 @@
 .header li a:hover{
 	color: #ffc049;
 }
+
+/*媒体查询兼容手机端*/
+@media screen and (max-width: 480px) {
+    .header li a {
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+    .header li a.active{
+		font-size: 16px;
+	}
+}

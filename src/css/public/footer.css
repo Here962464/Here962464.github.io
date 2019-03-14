@@ -21,3 +21,11 @@
 	padding: 10px 0;
 	font-size: 14px;
 }
+
+/*媒体查询兼容手机端*/
+@media screen and (max-width: 480px) {
+    .footer h5{
+		padding: 0;
+		font-size: 12px;
+	}
+}
