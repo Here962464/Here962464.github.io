@@ -1,0 +1,28 @@
+.header{
+	width: 100%;
+	background: #000;
+	overflow: auto;
+	text-align: center;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+.header li{
+	float: left;
+	cursor: pointer;
+}
+.header li a{
+	display: inline-block;
+	padding: 20px 30px;
+	color: #fff;
+	text-decoration: none;
+}
+.header li a.active{
+	color: #ffc049;
+	text-decoration: underline;
+	font-size: 18px;
+}
+.header li a:hover{
+	color: #ffc049;
+}

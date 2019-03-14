@@ -8,24 +8,30 @@
 	<meta name="Author" content="麻邻">
 	<link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="src/css/public/reset.css">
+	<link rel="stylesheet" type="text/css" href="src/iconfont/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="src/css/index.css">
 </head>
 <body>
-	<div class="content_box" id="content_box">
+	<div class="content_box">
 		<div class="mask"></div>
-		<ul class="header">
+		<ul class="header" id="header">
 			<li v-for="(item, index) in menu" v-cloak>
 				<a href="javascript:void(0);" :class="{active:iscur==index}" @click="tabMenu(index)">{{item.title}}</a>
 			</li>
 		</ul>
-		<div class="content">
+		<div class="content" id="content">
 			这里是一些内容
 		</div>
-		<div class="footer">
-			这里应该放CSDN博客链接
+		<div class="footer" id="footer">
+			<ul>
+				<li><i class="iconfont icon-iconsf-copy"></i></li>
+				<li><i class="iconfont icon-xiaoenai"></i></li>
+				<li><i class="iconfont icon-csdn"></i></li>
+				<li><i class="iconfont icon-github"></i></li>
+			</ul>
 		</div>
 	</div>
 	<script type="text/javascript" src="src/js/lib/vue/vue.2.6.8.js"></script>
-	<script type="text/javascript" src="src/js/index.js"></script>
+	<script type="text/javascript" src="src/js/public/header.js"></script>
 </body>
 </html>
