@@ -40,9 +40,9 @@ body{
 /*媒体查询兼容手机端*/
 @media screen and (max-width: 480px) {
     .content{
-        width: 92%;
+        width: 88%;
     	background-size: contain;
-        margin-left: 4%;
+        margin-left: 6%;
         margin-top: 20%;
     }
 }
