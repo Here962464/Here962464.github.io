@@ -7,11 +7,10 @@
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-}
-.header_active{
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 2;
 }
 .header li{
 	float: left;

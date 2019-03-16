@@ -1,5 +1,6 @@
 body{
 	background: url("../images/bg.png");
+	color: #666;
 }
 .line{
 	width: 100%;
@@ -53,6 +54,9 @@ body{
 .expr_line{
 	width: 100%;
 }
+.expr_line ul{
+	text-align: center;
+}
 .floor_line{
 	text-align: center;
 }
@@ -62,14 +66,88 @@ body{
 	height: 150px;
 	background: #fff;
 }
+.line_short div{
+	height: 60px;
+}
 .floor{
 	text-align: center;
+	position: relative;
+	display: inline-block;
 }
 .floor i{
 	color: #ffc049;
 	font-size: 24px;
 }
-
+.project{
+	width: 500px;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.06);
+	border-radius: 4px;
+	position: absolute;
+	top: -30px;
+	background: #fff;
+	padding: 20px;
+}
+.project:before,.project:after{
+    position:absolute;
+    top: 30px;
+    content:'';
+    overflow:hidden;
+    pointer-events:none;
+    -webkit-transform:rotate(45deg);
+    -mz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+.project h5 a{
+	color: #666;
+	text-decoration: none;
+	font-size: 20px;
+}
+.project h5 a:hover{
+	color: #ffc049;
+	text-decoration: underline;
+}
+.project h5 span{
+	color: #999;
+	font-size: 14px;
+}
+/*时间线右侧的对话框*/
+.project_right{
+	left: 50px;
+}
+.project_right:before{
+    box-shadow: 0px 3px 2px #ccc;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+}
+.project_right:after{
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    background: #fff;
+    box-shadow: none;
+}
+/*时间线左侧的对话框*/
+.project_left{
+	right: 50px;
+}
+.project_left:before{
+    box-shadow: 3px 0px 2px #ccc;
+    right:-7px;
+    width:14px;
+    height:14px;
+    margin-left:-7px;
+}
+.project_left:after{
+    right: -6px;
+    width:18px;
+    height:18px;
+    margin-left:-9px;
+    background:#fff;
+    box-shadow:none;
+}
 /*媒体查询兼容手机端*/
 @media screen and (max-width: 480px) {
 	.nav{
@@ -78,7 +156,7 @@ body{
     .info {
 	    width: 86%;
 	    margin-left: 7%;
-	    margin-top: 110px;
+	    margin-top: 150px;
 	}
 	.avatar {
 	    width: 60px;
@@ -91,5 +169,45 @@ body{
 	.info p {
 	    line-height: 25px;
 	    font-size: 12px;
+	}
+	/*时间线*/
+	.project{
+		width: 65vw;
+	}
+	.floor_line{
+		text-align: left;
+	}
+	.floor_line div{
+		background: none;
+	}
+	.expr_line ul{
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	/*时间线左侧的对话框*/
+	.project_left{
+		left: 50px;
+	}
+	.project_left:before{
+	    box-shadow: 0px 3px 2px #ccc;
+	    left:0px;
+	    width:14px;
+	    height:14px;
+	    margin-left:-7px;
+	}
+	.project_left:after{
+	    left: 1px;
+	    width:18px;
+	    height:18px;
+	    margin-left:-9px;
+	    background:#fff;
+	    box-shadow:none;
+	}
+	.project h5 a{
+		font-size: 16px;
+	}
+	.project h5 span{
+		font-size: 12px;
 	}
 }

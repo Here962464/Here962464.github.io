@@ -20,7 +20,7 @@ body{
 	width: 50%;
     height: 200px;
     margin-left: 25%;
-    margin-top: 3%;
+    margin-top: 10%;
     position: relative;
     text-align: center;
     background: url(../images/float_icon.png) no-repeat;
@@ -43,12 +43,12 @@ body{
         width: 88%;
     	background-size: contain;
         margin-left: 6%;
-        margin-top: 20%;
+        margin-top: 35%;
     }
 }
 @media screen and (max-height: 600px) {
     .content{
-        margin-top: 10%;
+        margin-top: 25%;
         padding-top:200px;
     }
 }

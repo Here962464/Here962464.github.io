@@ -3,8 +3,7 @@ var headerVm = new Vue({
 	data: {
 		// 顶部导航
 	    menu:[{title:"首页"},{title:"项目经验"},{title:"关于我"},{title:"联系方式"}],
-	    arr:["index","experience","about","contact"],
-	    scroll:false
+	    arr:["index","experience","about","contact"]
 	},
 	methods:{
 		// 切换导航
@@ -49,16 +48,6 @@ var headerVm = new Vue({
 	},
 	// 生命周期，加载初始化样式
 	created:function(){
-		var self = this;
-		// 监听滚动
-		window.addEventListener('scroll',function(e){
-			var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-		    // console.log(scrollTop)
-		    if(scrollTop > 60){
-		    	self.scroll = true;
-		    }else{
-		    	self.scroll = false;
-		    }
-		},false);
+		
 	}
 });

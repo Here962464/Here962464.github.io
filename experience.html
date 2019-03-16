@@ -18,13 +18,12 @@
 </head>
 <body>
 	<div class="content_box">
-		<div class="mask"></div>
-		<ul class="header" :class="{header_active:scroll}" id="header">
+		<ul class="header" id="header">
 			<li v-for="(item, index) in menu" v-cloak>
 				<a href="javascript:void(0);" :class="{active:iscur==index}" @click="tabMenu(index)">{{item.title}}</a>
 			</li>
 		</ul>
-		<div class="content" id="content">
+		<div class="content" id="content" v-cloak>
 			<div class="nav">
 				<img :src="pic">
 			</div>
@@ -35,22 +34,23 @@
 				<p>我是一名kuku的程序员</p>
 				<p>热爱代码，也痛恨代码。热爱生活，也痛恨生活。</p>
 			</div>
-			<div class="line"></div>
+			<!-- <div class="line"></div> -->
 			<div class="expr_line">
-				<ul>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
-					<li class="floor"><i class="iconfont icon-yuandian"></i></li>
-					<li class="floor_line"><div></div></li>
+				<ul v-for="(item, index) in expr_line">
+					<li class="floor_line" :class="{line_short:item.isFirst}"><div></div></li>
+					<li class="floor">
+						<i class="iconfont icon-yuandian"></i>
+						<div class="project" :class="item.side">
+							<h5>
+								<a :href="item.link" target="_blank">{{item.title}}</a>
+								<span>({{item.timeS}}</span>
+								<span>至</span>
+								<span>{{item.timeE}})</span>
+							</h5>
+							<p>{{item.title}}</p>
+						</div>
+					</li>
+					<li class="floor_line line_short" v-show="item.isLast"><div></div></li>
 				</ul>
 			</div>
 		</div>
@@ -64,6 +64,7 @@
 	<script type="text/javascript" src="src/js/lib/vue/vue.2.6.8.js"></script>
 	<script type="text/javascript" src="src/js/public/header.js"></script>
 	<script type="text/javascript" src="src/js/public/footer.js"></script>
+	<script type="text/javascript" src="src/js/public/bomb.js"></script>
 	<script type="text/javascript" src="src/js/experience.js"></script>
 </body>
 </html>
