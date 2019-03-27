@@ -30,7 +30,7 @@ var content = new Vue({
 			{
 				title:"仿微信开发者论坛",
 				timeS:"2018-7",
-				timeE:"2019-8",
+				timeE:"2018-8",
 				link:"http://jun.0cms.vip/addons/gengkuai_BBS/template/webapp/index.html",
 				respon:"这个项目主要参考微信开发者论坛的功能和样式，"
 				+"目前实现的功能有登录、注册、文章发表、删除文章、编辑文章、评论、评论回复、点赞、编辑资料、修改密码等，"
