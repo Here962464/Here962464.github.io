@@ -63,11 +63,11 @@ body{
 .floor_line div{
 	display: inline-block;
 	width: 4px;
-	height: 150px;
+	height: 200px;
 	background: #fff;
 }
 .line_short div{
-	height: 60px;
+	height: 100px;
 }
 .floor{
 	text-align: center;
@@ -87,6 +87,14 @@ body{
 	background: #fff;
 	padding: 20px;
 }
+.respon{
+	text-indent: 20px;
+	text-align: left;
+	line-height: 30px;
+}
+.respon span{
+	font-size: 16px;
+}
 .project:before,.project:after{
     position:absolute;
     top: 30px;
@@ -101,6 +109,7 @@ body{
 	color: #666;
 	text-decoration: none;
 	font-size: 20px;
+	line-height: 40px;
 }
 .project h5 a:hover{
 	color: #ffc049;
@@ -179,12 +188,15 @@ body{
 	}
 	.floor_line div{
 		background: none;
+		height: 300px;
+	}
+	.line_short div{
+		height: 100px;
 	}
 	.expr_line ul{
 		text-align: left;
 		padding-left: 10px;
 	}
-
 	/*时间线左侧的对话框*/
 	.project_left{
 		left: 50px;

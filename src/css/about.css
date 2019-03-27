@@ -1,0 +1,53 @@
+body{
+	background: url("../images/bg.png");
+	color: #666;
+}
+.content{
+	width: 60%;
+    margin-left: 20%;
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+.gif_left{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	width: 100px;
+}
+.gif_right{
+	position: absolute;
+	top: 100px;
+	right: 200px;
+	width: 100px;
+}
+.content h3{
+	font-size: 30px;
+	padding: 30px 0;
+    text-align: center;
+}
+.content p{
+	text-indent: 40px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+/*媒体查询兼容手机端*/
+@media screen and (max-width: 480px) {
+	.gif_left{
+		top: 60px;
+		left: 20px;
+	}
+	.gif_right{
+		top: 60px;
+		right: 20px;
+	}
+	.content{
+		width: 90%;
+		margin-left: 5%;
+	}
+    .content h3{
+    	font-size: 20px;
+		padding: 30px 0;
+		line-height: 30px;
+    }
+}

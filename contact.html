@@ -7,13 +7,14 @@
 	<meta name="keywords" content="个人网站">
 	<meta name="Author" content="麻邻">
 	<link rel="shortcut icon" type="images/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 	<!-- 这四个可以合并成为1个 -->
 	<link rel="stylesheet" type="text/css" href="src/css/public/reset.css">
 	<link rel="stylesheet" type="text/css" href="src/css/public/header.css">
 	<link rel="stylesheet" type="text/css" href="src/css/public/footer.css">
 	<link rel="stylesheet" type="text/css" href="src/iconfont/iconfont.css">
 	<!-- 这四个可以合并成为1个 -->
-	<link rel="stylesheet" type="text/css" href="src/css/index.css">
+	<link rel="stylesheet" type="text/css" href="src/css/contact.css">
 </head>
 <body>
 	<div class="content_box">
@@ -23,22 +24,21 @@
 			</li>
 		</ul>
 		<div class="content" id="content">
-			<img src="src/images/pepole.png">
-			<!-- <div class="float_icon">
-				<i class="iconfont icon-CSS"></i>
-				<i class="iconfont icon-divis"></i>
-				<i class="iconfont icon-cheng"></i>
-				<i class="iconfont icon-json"></i>
-				<i class="iconfont icon-vuejs"></i>
-				<i class="iconfont icon-yuan"></i>
-				<i class="iconfont icon-jia"></i>
-				<i class="iconfont icon-html-copy"></i>
-				<i class="iconfont icon-yinle"></i>
-				<i class="iconfont icon-sousuo"></i>
-				<i class="iconfont icon-tubiaozhizuomoban"></i>
-				<i class="iconfont icon-cheng1"></i>
-				<i class="iconfont icon-yuan1"></i>
-			</div> -->
+			<div class="csdn" id="csdn">
+				<a href="https://blog.csdn.net/here962464" target="_blank">
+					<i class="iconfont icon-csdn"></i>
+				</a>
+			</div>
+			<div class="segmentfault" id="segmentfault">
+				<a href="https://segmentfault.com/u/malin" target="_blank">
+					<i class="iconfont icon-iconsf-copy"></i>
+				</a>
+			</div>
+			<div class="github" id="github">
+				<a href="https://github.com/Here962464" target="_blank">
+					<i class="iconfont icon-github"></i>
+				</a>
+			</div>
 		</div>
 		<div class="footer" id="footer">
 			<a href="https://blog.csdn.net/here962464" target="_blank"><i class="iconfont icon-csdn"></i></a>
@@ -48,9 +48,11 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="src/js/lib/vue/vue.2.6.8.js"></script>
+	<!-- 合并 -->
 	<script type="text/javascript" src="src/js/public/header.js"></script>
 	<script type="text/javascript" src="src/js/public/footer.js"></script>
 	<script type="text/javascript" src="src/js/public/bomb.js"></script>
-	<script type="text/javascript" src="src/js/index.js"></script>
+	<!-- 合并 -->
+	<script type="text/javascript" src="src/js/contact.js"></script>
 </body>
 </html>
