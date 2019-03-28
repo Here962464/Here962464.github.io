@@ -2,8 +2,8 @@ var headerVm = new Vue({
 	el:"#header",
 	data: {
 		// 顶部导航
-	    menu:[{title:"首页"},{title:"项目经验"},{title:"关于我"},{title:"联系方式"}],
-	    arr:["index","experience","about","contact"]
+	    menu:[{title:"首页"},{title:"项目经验"},{title:"关于我"}],
+	    arr:["index","experience","about"]
 	},
 	methods:{
 		// 切换导航

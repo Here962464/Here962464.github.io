@@ -1,21 +1,25 @@
 body{
 	background: url("../images/bg.png");
 	color: #666;
+	height: 100vh;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
 }
 .content{
 	width: 50%;
     margin-left: 25%;
-    padding-top: 140px;
-    padding-bottom: 100px;
-    min-height: 90vh;
+    position: relative;
 }
 .content a{
 	display: inline-block;
 	padding: 50px;
 	text-decoration: none;
     text-align: center;
-	border-radius: 50%;
-	background: #fff;
+	/*border-radius: 50%;*/
+	background: url('../images/egg.png') no-repeat;
+	background-size: cover;
 }
 /*.content a:hover{
 	background: rgba(0,0,0,0.4);
@@ -24,8 +28,107 @@ body{
 .content a i{
 	font-size: 50px;
 	margin-top: 50px;
-	color: #ffc049;
+	color: #fff;
 }
 /*.content a:hover i{
 	color: #fff;
 }*/
+/*第一次跳跃*/
+.bounce1{
+	/*box-shadow: 15px 20px 30px -5px rgba(0,0,0,0.1);*/
+    /*border-radius: 50%;*/
+	position: absolute;
+	animation: myfirst .5s;
+    -webkit-animation: myfirst .5s; /* Safari 与 Chrome */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes myfirst{
+    from {top: 10px;}
+    to {top: 300px;}
+}
+ /*Safari 与 Chrome*/
+@-webkit-keyframes myfirst{
+    from {top: 10px;}
+    to {top: 300px;}
+}
+/*第二次跳跃*/
+.bounce2{
+	animation: mysecond .5s;
+    -webkit-animation: mysecond .5s; /* Safari 与 Chrome */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes mysecond{
+    from {top: 300px;}
+    to {top: 160px;}
+}
+ /*Safari 与 Chrome*/
+@-webkit-keyframes mysecond{
+    from {top: 300px;}
+    to {top: 160px;}
+}
+/*第三次跳跃*/
+.bounce3{
+	animation: mythird .5s;
+    -webkit-animation: mythird .5s; /* Safari 与 Chrome */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes mythird{
+    from {top: 160px;}
+    to {top: 300px;}
+}
+ /*Safari 与 Chrome*/
+@-webkit-keyframes mythird{
+    from {top: 160px;}
+    to {top: 300px;}
+}
+/*第四次跳跃*/
+.bounce4{
+	animation: myfourth .5s;
+    -webkit-animation: myfourth .5s; /* Safari 与 Chrome */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes myfourth{
+    from {top: 300px;}
+    to {top: 220px;}
+}
+ /*Safari 与 Chrome*/
+@-webkit-keyframes myfourth{
+    from {top: 300px;}
+    to {top: 220px;}
+}
+/*第五次跳跃*/
+.bounce5{
+	animation: myfive .5s;
+    -webkit-animation: myfive .5s; /* Safari 与 Chrome */
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes myfive{
+    from {top: 220px;}
+    to {top: 300px;}
+}
+ /*Safari 与 Chrome*/
+@-webkit-keyframes myfive{
+    from {top: 220px;}
+    to {top: 300px;}
+}
+
+.csdn{
+	left:5%;
+}
+.segmentfault{
+	left: 35%;
+}
+.github{
+	left: 65%;
+}
+
+
+
+
+
+
